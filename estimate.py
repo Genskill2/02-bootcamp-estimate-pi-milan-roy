@@ -40,7 +40,7 @@ def wallis(value):
 	return 2*pi
 
 def is_inside(x,y):
-	distance=math.sqrt(math.pow(x,2),math.pow(y,2))
+	distance=math.sqrt(math.pow(x,2)+math.pow(y,2))
 	if 1>distance:
 		return True
 	else:
