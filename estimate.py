@@ -43,7 +43,7 @@ def is_inside(x,y):
 	distance=math.sqrt(math.pow(x,2),math.pow(y,2))
 	if 1>distance:
 		return True
-	else 
+	else:
 		return False
 	
 def monte_carlo(value):
