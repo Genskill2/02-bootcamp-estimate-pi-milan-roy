@@ -1,5 +1,6 @@
 import math
 import unittest
+import random
 
 class TestWallis(unittest.TestCase):
     def test_low_iters(self):
@@ -37,3 +38,18 @@ def wallis(value):
 	for i in range (1,value+1):
 		pi=pi*4*i*i/((4*i*i)-1)	
 	return 2*pi
+
+def is_inside(x,y)
+	distance=math.sqrt(math.pow(x,2),math.pow(y,2))
+	if(1>distance)
+		return True
+	else 
+		return False
+	
+def monte_carlo(value)
+	in=0
+	isinside=is_inside(random.random(),random.random())
+	if(is_inside==True)
+		in=in+1
+	return 4*in/value
+
