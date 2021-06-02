@@ -47,9 +47,14 @@ def is_inside(x,y):
 		return False
 	
 def monte_carlo(value):
-	inside=0
-	isinside=is_inside(random.random(),random.random())
-	if is_inside==True: 
-		inside=inside+1
-	return 4*inside/value
+	inside1=0
+	random.seed()
+	for i in range(value):
+		x=random.random()
+		y=random.random()
+		isinside=is_inside(x,y)
+		if isinside==True: 
+			inside1=inside1+1
+	return 4*inside1/value
+
 
